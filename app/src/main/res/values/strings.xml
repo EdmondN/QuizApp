@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Greek Quiz App</string>
+        <string name="radio1">Wrong !!!</string>
+        <string name="radio2">Wrong !!!</string>
+        <string name="btn_display">Display</string>
+    </resources>
+

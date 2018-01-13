@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@drawable/athens">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:text="1. What is the Capital City of Greece ?"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="55dp">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="156dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRadioButtonClickedQ1"
+                android:text="Patra"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="156dp"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/radioGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRadioButtonClickedQ1"
+                android:text="Thessaloniki "
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="156dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRadioButtonClickedQ1"
+                android:text="Athens "
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="156dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRadioButtonClickedQ1"
+                android:text="Nafplio"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. What is the largest island in Greece?"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/background_light"/>
+
+        <CheckBox
+            android:id="@+id/checkboxa1"
+            android:text="Kefalonia"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="55dp"/>
+        <CheckBox
+            android:id="@+id/checkboxa2"
+            android:text="Crete"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <CheckBox
+            android:id="@+id/checkboxa3"
+            android:text="Corfu"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <CheckBox
+            android:id="@+id/checkboxa4"
+            android:text="Mykonos"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. The last letter of the Greek alphabet is ...?"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxb1"
+            android:text="Gamma"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="55dp"/>
+        <CheckBox
+            android:id="@+id/checkboxb2"
+            android:text="Alfa"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <CheckBox
+            android:id="@+id/checkboxb3"
+            android:text="Omega"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <CheckBox
+            android:id="@+id/checkboxb4"
+            android:text="Epsilon"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:text="4. What is the Goddess of Love and Beauty?"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="55dp">
+
+            <RadioButton
+                android:id="@+id/radiob1"
+                android:layout_width="156dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRadioButtonClickedQ2"
+                android:text="Artemis"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radiob2"
+                android:layout_width="156dp"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/radioGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRadioButtonClickedQ2"
+                android:text="Hera "
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radiob3"
+                android:layout_width="156dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRadioButtonClickedQ2"
+                android:text="Athena"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radiob4"
+                android:layout_width="156dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRadioButtonClickedQ2"
+                android:text="Aphrodite"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:text="5. What is the king of Gods in greek mythology?"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edittext1"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="54dp"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:text="6. What is the first capital of Greece?"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edittext2"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="54dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Submit-Reset Buttons. -->
+            <Button
+                android:id="@+id/btnDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="54dp"
+                android:layout_marginTop="55dp"
+                android:onClick="onSubmit"
+                android:text="submit answer"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonrReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="54dp"
+                android:layout_marginRight="@+id/btnDisplay"
+                android:layout_marginTop="55dp"
+                android:onClick="onClear"
+                android:text="Reset"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
