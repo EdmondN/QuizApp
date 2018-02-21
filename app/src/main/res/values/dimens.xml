@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginEnd12">12dp</dimen>
+    <dimen name="marginStart12">12dp</dimen>
+    <dimen name="marginTop30">30dp</dimen>
+    <dimen name="marginRight12">12dp</dimen>
+    <dimen name="marginLeft12">12dp</dimen>
+    <dimen name="textSize30">30sp</dimen>
+    <dimen name="marginBottom17">17dp</dimen>
+    <dimen name="marginTop55">55dp</dimen>
+    <dimen name="width156">156dp</dimen>
+    <dimen name="height45">45dp</dimen>
+    <dimen name="textSize20">20sp</dimen>
+    <dimen name="marginBottom54">54dp</dimen>
+    <dimen name="textSize18">18sp</dimen>
+</resources>
