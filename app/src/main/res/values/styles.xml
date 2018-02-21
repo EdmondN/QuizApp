@@ -1,11 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#4CA6FF</item>
+        <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">#4CA6FF</item>
     </style>
+    <style name="QuestionFont">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/textSize30</item>
+        <item name= "android:textStyle">bold</item>
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_marginRight">@dimen/marginRight12</item>
+        <item name ="android:layout_marginLeft">@dimen/marginLeft12</item>
+        <item name ="android:layout_marginTop">@dimen/marginTop30</item>
 
+    </style>
+    <style name="AnswerFont">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/textSize20</item>
+        <item name= "android:textStyle">bold</item>
+        <item name="android:layout_width">@dimen/width156</item>
+        <item name="android:layout_height">@dimen/height45</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:buttonTint">@android:color/background_light</item>
+    </style>
+    <style name="AnswerFontEdit">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">@dimen/width156</item>
+        <item name="android:layout_height">@dimen/height45</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/marginTop55</item>
+        <item name=" android:layout_marginBottom">@dimen/marginBottom54</item>
+        <item name= "android:textStyle">bold</item>
+        <item name="android:hint">@string/EnterAnswer</item>
+        <item name="android:backgroundTint">@android:color/background_light</item>
+    </style>
+<style name="Button">
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/marginTop55</item>
+    <item name="android:layout_marginBottom">@dimen/marginBottom54</item>
+    <item name="android:textSize">@dimen/textSize18</item>
+</style>
 </resources>
