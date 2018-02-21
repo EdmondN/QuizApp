@@ -1,7 +1,58 @@
 <resources>
     <string name="app_name">Greek Quiz App</string>
-        <string name="radio1">Wrong !!!</string>
-        <string name="radio2">Wrong !!!</string>
-        <string name="btn_display">Display</string>
-    </resources>
+    <string name="EnterAnswer">Your Answer </string>
+    <string name="_1_what_is_the_capital_city_of_greece">1. What is the Capital City of Greece ?</string>
+    <string name="patra">Patra</string>
+    <string name="thessaloniki">Thessaloniki</string>
+    <string name="athens">Athens</string>
+    <string name="nafplio">Nafplio</string>
+    <string name="_2_which_are_the_largest_islands_of_greece">2. Which are the largest islands of Greece?</string>
+    <string name="kefalonia">Kefalonia</string>
+    <string name="crete">Crete</string>
+    <string name="euboea">Euboea</string>
+    <string name="mykonos">Mykonos</string>
+    <string name="_3_the_first_and_last_letter">3. The first and last letter of the Greek alphabet is..?</string>
+    <string name="alfa">Alfa</string>
+    <string name="gamma">Gamma</string>
+    <string name="omega">Omega</string>
+    <string name="epsilon">Epsilon</string>
+    <string name="_4_what_is_the_goddess_of_love_and_beauty">4. What is the Goddess of Love and Beauty?</string>
+    <string name="artemis">Artemis</string>
+    <string name="hera">Hera</string>
+    <string name="athena">Athena</string>
+    <string name="aphrodite">Aphrodite</string>
+    <string name="_5_what_is_the_king_of_gods_in_greek_mythology">5. What is the king of Gods in greek mythology?</string>
+    <string name="_6_what_is_the_first_capital_of_greece">6. What is the first capital of Greece?</string>
+    <string name="submit_answer">submit answer</string>
+    <string name="reset">Reset</string>
+    <string name="thanks">Thanks for your answer!</string>
+    <string name="noanswerQ1">No answer in question: 1 !</string>
+    <string name="noanswerQ2">No answer in question: 2 !</string>
+    <string name="noanswerQ3">No answer in question: 3 !</string>
+    <string name="noanswerQ4">No answer in question: 4 !</string>
+    <string name="noanswerQ5">No answer in question: 5 !</string>
+    <string name="noanswerQ6">No answer in question: 6 !</string>
+    <string name="dias">dias</string>
+    <string name="Dias">Dias</string>
+    <string name="zeus">zeus</string>
+    <string name="Zeus">Zeus</string>
+    <string name="Nafplio1">Nafplio</string>
+    <string name="nafplio1">nafplio</string>
+    <string name="nauplio">nauplio</string>
+    <string name="Nauplio">Nauplio</string>
+    <string name="Q1isCorrect">Question: 1 is Correct.</string>
+    <string name="Q2isCorrect">Question: 2 is Correct.</string>
+    <string name="Q3isCorrect">Question: 3 is Correct.</string>
+    <string name="Q4isCorrect">Question: 4 is Correct.</string>
+    <string name="Q5isCorrect">Question: 5 is Correct.</string>
+    <string name="Q6isCorrect">Question: 6 is Correct.</string>
+    <string name="Q1isWrong">Question: 1 is Wrong.</string>
+    <string name="Q2isWrong">Question: 2 is Wrong.</string>
+    <string name="Q3isWrong">Question: 3 is Wrong.</string>
+    <string name="Q4isWrong">Question: 4 is Wrong.</string>
+    <string name="Q5isWrong">Question: 5 is Wrong.</string>
+    <string name="Q6isWrong">Question: 6 is Wrong.</string>
+    <string name="score">Score:</string>
+</resources>
+
 
