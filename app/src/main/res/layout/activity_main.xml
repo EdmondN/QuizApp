@@ -17,297 +17,149 @@
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="30dp"
-            android:text="1. What is the Capital City of Greece ?"
-            android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            style="@style/QuestionFont"
+            android:text="@string/_1_what_is_the_capital_city_of_greece" />
 
         <RadioGroup
             android:id="@+id/radioGroup1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView1"
-            android:layout_marginBottom="17dp"
-            android:layout_marginTop="55dp">
+            android:layout_marginBottom="@dimen/marginBottom17"
+            android:layout_marginTop="@dimen/marginTop55">
 
             <RadioButton
                 android:id="@+id/radio1"
-                android:layout_width="156dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
+                style="@style/AnswerFont"
                 android:onClick="onRadioButtonClickedQ1"
-                android:text="Patra"
-                android:textColor="@android:color/background_light"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/patra" />
 
             <RadioButton
                 android:id="@+id/radio2"
-                android:layout_width="156dp"
-                android:layout_height="45dp"
-                android:layout_alignTop="@+id/radioGroup"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedQ1"
-                android:text="Thessaloniki "
-                android:textColor="@android:color/background_light"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/thessaloniki"
+                style="@style/AnswerFont" />
 
             <RadioButton
                 android:id="@+id/radio3"
-                android:layout_width="156dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedQ1"
-                android:text="Athens "
-                android:textColor="@android:color/background_light"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/athens"
+                style="@style/AnswerFont"/>
 
             <RadioButton
                 android:id="@+id/radio4"
-                android:layout_width="156dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedQ1"
-                android:text="Nafplio"
-                android:textColor="@android:color/background_light"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/nafplio"
+                style="@style/AnswerFont" />
         </RadioGroup>
 
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2. What is the largest island in Greece?"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="30dp"
-            android:textColor="@android:color/background_light"/>
+            android:text="@string/_2_which_are_the_largest_islands_of_greece"
+            style="@style/QuestionFont" />
 
         <CheckBox
             android:id="@+id/checkboxa1"
-            android:text="Kefalonia"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="55dp"/>
+            android:text="@string/kefalonia"
+            android:layout_marginTop="@dimen/marginTop55"
+            style="@style/AnswerFont"/>
+
+
         <CheckBox
             android:id="@+id/checkboxa2"
-            android:text="Crete"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/crete"
+            style="@style/AnswerFont" />
+
         <CheckBox
             android:id="@+id/checkboxa3"
-            android:text="Corfu"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/euboea"
+            style="@style/AnswerFont"/>
+
         <CheckBox
             android:id="@+id/checkboxa4"
-            android:text="Mykonos"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/mykonos"
+            style="@style/AnswerFont"/>
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3. The last letter of the Greek alphabet is ...?"
-            android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="30dp" />
+            android:text="@string/_3_the_first_and_last_letter"
+            style="@style/QuestionFont" />
 
         <CheckBox
             android:id="@+id/checkboxb1"
-            android:text="Gamma"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="55dp"/>
+            android:text="@string/alfa"
+            android:layout_marginTop="@dimen/marginTop55"
+            style="@style/AnswerFont"/>
+
         <CheckBox
             android:id="@+id/checkboxb2"
-            android:text="Alfa"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/gamma"
+            style="@style/AnswerFont" />
+
         <CheckBox
             android:id="@+id/checkboxb3"
-            android:text="Omega"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/omega"
+            style="@style/AnswerFont"/>
+
         <CheckBox
             android:id="@+id/checkboxb4"
-            android:text="Epsilon"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/epsilon"
+            style="@style/AnswerFont"/>
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="30dp"
-            android:text="4. What is the Goddess of Love and Beauty?"
-            android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:text="@string/_4_what_is_the_goddess_of_love_and_beauty"
+            style="@style/QuestionFont" />
 
         <RadioGroup
             android:id="@+id/radioGroup2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView4"
-            android:layout_marginBottom="17dp"
-            android:layout_marginTop="55dp">
+            android:layout_marginBottom="@dimen/marginBottom17"
+            android:layout_marginTop="@dimen/marginTop55">
 
             <RadioButton
                 android:id="@+id/radiob1"
-                android:layout_width="156dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedQ2"
-                android:text="Artemis"
-                android:textColor="@android:color/background_light"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/artemis"
+                style="@style/AnswerFont"/>
 
             <RadioButton
                 android:id="@+id/radiob2"
-                android:layout_width="156dp"
-                android:layout_height="45dp"
-                android:layout_alignTop="@+id/radioGroup"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedQ2"
-                android:text="Hera "
-                android:textColor="@android:color/background_light"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/hera"
+                style="@style/AnswerFont" />
 
             <RadioButton
                 android:id="@+id/radiob3"
-                android:layout_width="156dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedQ2"
-                android:text="Athena"
-                android:textColor="@android:color/background_light"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/athena"
+                style="@style/AnswerFont" />
 
             <RadioButton
                 android:id="@+id/radiob4"
-                android:layout_width="156dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedQ2"
-                android:text="Aphrodite"
-                android:textColor="@android:color/background_light"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/aphrodite"
+                style="@style/AnswerFont" />
+
         </RadioGroup>
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="30dp"
-            android:text="5. What is the king of Gods in greek mythology?"
-            android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            style="@style/QuestionFont"
+            android:text="@string/_5_what_is_the_king_of_gods_in_greek_mythology" />
+
         <EditText
             android:id="@+id/edittext1"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="55dp"
-            android:layout_marginBottom="54dp"/>
+            style="@style/AnswerFontEdit" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="30dp"
-            android:text="6. What is the first capital of Greece?"
-            android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            style="@style/QuestionFont"
+            android:text="@string/_6_what_is_the_first_capital_of_greece" />
+
         <EditText
             android:id="@+id/edittext2"
-            android:layout_width="156dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="55dp"
-            android:layout_marginBottom="54dp"/>
+            style="@style/AnswerFontEdit" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -318,25 +170,16 @@
             <Button
                 android:id="@+id/btnDisplay"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="54dp"
-                android:layout_marginTop="55dp"
                 android:onClick="onSubmit"
-                android:text="submit answer"
-                android:textSize="18sp" />
+                android:text="@string/submit_answer"
+                style="@style/Button" />
 
             <Button
                 android:id="@+id/buttonrReset"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginBottom="54dp"
-                android:layout_marginRight="@+id/btnDisplay"
-                android:layout_marginTop="55dp"
                 android:onClick="onClear"
-                android:text="Reset"
-                android:textSize="18sp" />
+                android:text="@string/reset"
+                style="@style/Button" />
 
         </LinearLayout>
     </LinearLayout>
