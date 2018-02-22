@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //* Clears all selected radio buttons, checkboxes, edittexts to default *//
     public void onClear(View v) {
-       /* Clears all selected radio buttons, checkboxes, edittexts to default */
         radio1Group = findViewById(R.id.radioGroup1);
         radio1Group.clearCheck();
         radio2Group = findViewById(R.id.radioGroup2);
@@ -242,6 +242,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // Caltulate Score 
     public int calculateScore(int score, boolean resultQ1, boolean resultQ2, boolean resultQ3, boolean resultQ4, boolean resultQ5, boolean resultQ6) {
         if (resultQ1) {
             score += 1;
