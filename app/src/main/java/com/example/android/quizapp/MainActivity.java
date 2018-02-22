@@ -10,9 +10,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-
-
-
 public class MainActivity extends AppCompatActivity {
     private RadioGroup radio1Group;
     private RadioGroup radio2Group;
@@ -33,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
 
 
     //display toast
@@ -84,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
 
-            }
+        }
 
     }
 
@@ -207,28 +203,46 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Calls method to calculate the score.
-        int finalScore = calculateScore(score, resultQ1, resultQ2, resultQ3, resultQ4 , resultQ5 , resultQ6 );
+        int finalScore = calculateScore(score, resultQ1, resultQ2, resultQ3, resultQ4, resultQ5, resultQ6);
         //Create a toast message, displayed when a user fills in an answer.
         CharSequence textToast = "\n" + getString(R.string.thanks);
         // Message if Questions is Correct or Wrong
         String message = "";
-        if (resultQ1) { message += "\n" + getString(R.string.Q1isCorrect);}
-        else {message += "\n" + getString(R.string.Q1isWrong);}
-        if (resultQ2) { message += "\n" +  getString(R.string.Q2isCorrect);}
-        else {message +=  "\n" + getString(R.string.Q2isWrong);}
-        if (resultQ3) { message += "\n" +  getString(R.string.Q3isCorrect);}
-        else {message +=  "\n" +   getString(R.string.Q3isWrong);}
-        if (resultQ4) { message += "\n" +  getString(R.string.Q4isCorrect);}
-        else {message +=  "\n" +  getString(R.string.Q4isWrong);}
-        if (resultQ5) { message += "\n" +  getString(R.string.Q5isCorrect);}
-        else {message += "\n" +   getString(R.string.Q5isWrong);}
-        if (resultQ6) { message += "\n" +  getString(R.string.Q6isCorrect);}
-        else {message += "\n" +  getString(R.string.Q6isWrong);}
+        if (resultQ1) {
+            message += "\n" + getString(R.string.Q1isCorrect);
+        } else {
+            message += "\n" + getString(R.string.Q1isWrong);
+        }
+        if (resultQ2) {
+            message += "\n" + getString(R.string.Q2isCorrect);
+        } else {
+            message += "\n" + getString(R.string.Q2isWrong);
+        }
+        if (resultQ3) {
+            message += "\n" + getString(R.string.Q3isCorrect);
+        } else {
+            message += "\n" + getString(R.string.Q3isWrong);
+        }
+        if (resultQ4) {
+            message += "\n" + getString(R.string.Q4isCorrect);
+        } else {
+            message += "\n" + getString(R.string.Q4isWrong);
+        }
+        if (resultQ5) {
+            message += "\n" + getString(R.string.Q5isCorrect);
+        } else {
+            message += "\n" + getString(R.string.Q5isWrong);
+        }
+        if (resultQ6) {
+            message += "\n" + getString(R.string.Q6isCorrect);
+        } else {
+            message += "\n" + getString(R.string.Q6isWrong);
+        }
         Toast.makeText(this, getString(R.string.score) + " " + finalScore + "\n" + textToast + "\n" + message, Toast.LENGTH_SHORT).show();
 
     }
 
-    public int calculateScore(int score, boolean resultQ1, boolean resultQ2, boolean resultQ3, boolean resultQ4 , boolean resultQ5 ,boolean resultQ6 ) {
+    public int calculateScore(int score, boolean resultQ1, boolean resultQ2, boolean resultQ3, boolean resultQ4, boolean resultQ5, boolean resultQ6) {
         if (resultQ1) {
             score += 1;
         }
@@ -253,5 +267,3 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
-
-
