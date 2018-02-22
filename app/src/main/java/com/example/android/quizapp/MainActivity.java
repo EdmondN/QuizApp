@@ -13,8 +13,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private RadioGroup radio1Group;
     private RadioGroup radio2Group;
-    private RadioButton radio1Button;
-    private Button btnDisplay;
     boolean resultQ1;
     boolean resultQ2;
     boolean resultQ3;
@@ -22,15 +20,13 @@ public class MainActivity extends AppCompatActivity {
     boolean resultQ5;
     boolean resultQ6;
 
-
-    int score = 0;
+    int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
 
     //display toast
     public void onRadioButtonClickedQ1(View view) {
@@ -78,45 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 if (checked)
                     resultQ4 = true;
                 break;
-
-
         }
-
-    }
-
-    //* Clears all selected radio buttons, checkboxes, edittexts to default *//
-    public void onClear(View v) {
-        radio1Group = findViewById(R.id.radioGroup1);
-        radio1Group.clearCheck();
-        radio2Group = findViewById(R.id.radioGroup2);
-        radio2Group.clearCheck();
-        CheckBox checkBox2_1 = findViewById(R.id.checkboxa1);
-        checkBox2_1.setChecked(false);
-        CheckBox checkBox2_2 = findViewById(R.id.checkboxa2);
-        checkBox2_2.setChecked(false);
-        CheckBox checkBox2_3 = findViewById(R.id.checkboxa3);
-        checkBox2_3.setChecked(false);
-        CheckBox checkBox2_4 = findViewById(R.id.checkboxa4);
-        checkBox2_4.setChecked(false);
-        CheckBox checkBox3_1 = findViewById(R.id.checkboxb1);
-        checkBox3_1.setChecked(false);
-        CheckBox checkBox3_2 = findViewById(R.id.checkboxb2);
-        checkBox3_2.setChecked(false);
-        CheckBox checkBox3_3 = findViewById(R.id.checkboxb3);
-        checkBox3_3.setChecked(false);
-        CheckBox checkBox3_4 = findViewById(R.id.checkboxb4);
-        checkBox3_4.setChecked(false);
-        EditText question5 = findViewById(R.id.edittext1);
-        question5.setText("");
-        EditText question6 = findViewById(R.id.edittext2);
-        question6.setText("");
-        resultQ1 = false;
-        resultQ2 = false;
-        resultQ3 = false;
-        resultQ4 = false;
-        resultQ5 = false;
-        resultQ6 = false;
-        score = 0;
     }
 
     //Method called when Submit Button is clicked.
@@ -179,28 +137,30 @@ public class MainActivity extends AppCompatActivity {
         //Five question - right answer is: dias or zeus
         EditText question_5 = findViewById(R.id.edittext1);
         String question5 = question_5.getText().toString();
+        if (question5.equalsIgnoreCase(getString(R.string.dias)) || question5.equalsIgnoreCase(getString(R.string.Dias)) || question5.equalsIgnoreCase(getString(R.string.zeus)) || question5.equalsIgnoreCase(getString(R.string.Zeus))) {
+            resultQ5 = true;
+
+        }
         // If EditText is empty in question 5
         if (question5.isEmpty()) {
             score = 0;
             Toast.makeText(this, R.string.noanswerQ5, Toast.LENGTH_SHORT).show();
             return;
         }
-        if (question5.equals(getString(R.string.dias)) || question5.equals(getString(R.string.Dias)) || question5.equals(getString(R.string.zeus)) || question5.equals(getString(R.string.Zeus))) {
-            resultQ5 = true;
-        }
+
         //Six question - right answer is: nafplio - Nafplio
         EditText question_6 = findViewById(R.id.edittext2);
         String question6 = question_6.getText().toString();
+
+        if (question6.equalsIgnoreCase(getString(R.string.Nafplio1)) || question6.equalsIgnoreCase(getString(R.string.nafplio1)) || question6.equalsIgnoreCase(getString(R.string.nauplio)) || question6.equalsIgnoreCase(getString(R.string.Nauplio))) {
+            resultQ6 = true;
+        }
         // If EditText is empty in question 6
         if (question6.isEmpty()) {
             score = 0;
             Toast.makeText(this, R.string.noanswerQ6, Toast.LENGTH_SHORT).show();
             return;
         }
-        if (question6.equals(getString(R.string.Nafplio1)) || question6.equals(getString(R.string.nafplio1)) || question6.equals(getString(R.string.nauplio)) || question6.equals(getString(R.string.Nauplio))) {
-            resultQ6 = true;
-        }
-
 
         //Calls method to calculate the score.
         int finalScore = calculateScore(score, resultQ1, resultQ2, resultQ3, resultQ4, resultQ5, resultQ6);
@@ -239,10 +199,44 @@ public class MainActivity extends AppCompatActivity {
             message += "\n" + getString(R.string.Q6isWrong);
         }
         Toast.makeText(this, getString(R.string.score) + " " + finalScore + "\n" + textToast + "\n" + message, Toast.LENGTH_SHORT).show();
-
     }
 
-    // Caltulate Score 
+    //* Clears all selected radio buttons, checkboxes, edittexts to default *//
+    public void onClear(View v) {
+        radio1Group = findViewById(R.id.radioGroup1);
+        radio1Group.clearCheck();
+        radio2Group = findViewById(R.id.radioGroup2);
+        radio2Group.clearCheck();
+        CheckBox checkBox2_1 = findViewById(R.id.checkboxa1);
+        checkBox2_1.setChecked(false);
+        CheckBox checkBox2_2 = findViewById(R.id.checkboxa2);
+        checkBox2_2.setChecked(false);
+        CheckBox checkBox2_3 = findViewById(R.id.checkboxa3);
+        checkBox2_3.setChecked(false);
+        CheckBox checkBox2_4 = findViewById(R.id.checkboxa4);
+        checkBox2_4.setChecked(false);
+        CheckBox checkBox3_1 = findViewById(R.id.checkboxb1);
+        checkBox3_1.setChecked(false);
+        CheckBox checkBox3_2 = findViewById(R.id.checkboxb2);
+        checkBox3_2.setChecked(false);
+        CheckBox checkBox3_3 = findViewById(R.id.checkboxb3);
+        checkBox3_3.setChecked(false);
+        CheckBox checkBox3_4 = findViewById(R.id.checkboxb4);
+        checkBox3_4.setChecked(false);
+        EditText question5 = findViewById(R.id.edittext1);
+        question5.setText("");
+        EditText question6 = findViewById(R.id.edittext2);
+        question6.setText("");
+        resultQ1 = false;
+        resultQ2 = false;
+        resultQ3 = false;
+        resultQ4 = false;
+        resultQ5 = false;
+        resultQ6 = false;
+        score = 0;
+    }
+
+    // Caltulate Score
     public int calculateScore(int score, boolean resultQ1, boolean resultQ2, boolean resultQ3, boolean resultQ4, boolean resultQ5, boolean resultQ6) {
         if (resultQ1) {
             score += 1;
@@ -265,6 +259,4 @@ public class MainActivity extends AppCompatActivity {
 
         return (score);
     }
-
-
 }
