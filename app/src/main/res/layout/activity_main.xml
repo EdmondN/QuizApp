@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity"
-    android:background="@drawable/athens">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/athens"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
 
         <TextView
             android:id="@+id/textView1"
@@ -35,81 +33,80 @@
 
             <RadioButton
                 android:id="@+id/radio2"
+                style="@style/AnswerFont"
                 android:onClick="onRadioButtonClickedQ1"
-                android:text="@string/thessaloniki"
-                style="@style/AnswerFont" />
+                android:text="@string/thessaloniki" />
 
             <RadioButton
                 android:id="@+id/radio3"
+                style="@style/AnswerFont"
                 android:onClick="onRadioButtonClickedQ1"
-                android:text="@string/athens"
-                style="@style/AnswerFont"/>
+                android:text="@string/athens" />
 
             <RadioButton
                 android:id="@+id/radio4"
+                style="@style/AnswerFont"
                 android:onClick="onRadioButtonClickedQ1"
-                android:text="@string/nafplio"
-                style="@style/AnswerFont" />
+                android:text="@string/nafplio" />
         </RadioGroup>
 
 
         <TextView
             android:id="@+id/textView2"
-            android:text="@string/_2_which_are_the_largest_islands_of_greece"
-            style="@style/QuestionFont" />
+            style="@style/QuestionFont"
+            android:text="@string/_2_which_are_the_largest_islands_of_greece" />
 
         <CheckBox
             android:id="@+id/checkboxa1"
-            android:text="@string/kefalonia"
+            style="@style/AnswerFont"
             android:layout_marginTop="@dimen/marginTop55"
-            style="@style/AnswerFont"/>
-
+            android:text="@string/kefalonia" />
 
         <CheckBox
             android:id="@+id/checkboxa2"
-            android:text="@string/crete"
-            style="@style/AnswerFont" />
+            style="@style/AnswerFont"
+            android:text="@string/crete" />
 
         <CheckBox
             android:id="@+id/checkboxa3"
-            android:text="@string/euboea"
-            style="@style/AnswerFont"/>
+            style="@style/AnswerFont"
+            android:text="@string/euboea" />
 
         <CheckBox
             android:id="@+id/checkboxa4"
-            android:text="@string/mykonos"
-            style="@style/AnswerFont"/>
+            style="@style/AnswerFont"
+            android:text="@string/mykonos" />
 
         <TextView
             android:id="@+id/textView3"
-            android:text="@string/_3_the_first_and_last_letter"
-            style="@style/QuestionFont" />
+            style="@style/QuestionFont"
+            android:text="@string/_3_the_first_and_last_letter" />
 
         <CheckBox
             android:id="@+id/checkboxb1"
-            android:text="@string/alfa"
+            style="@style/AnswerFont"
             android:layout_marginTop="@dimen/marginTop55"
-            style="@style/AnswerFont"/>
+            android:text="@string/alfa" />
 
         <CheckBox
             android:id="@+id/checkboxb2"
-            android:text="@string/gamma"
-            style="@style/AnswerFont" />
+            style="@style/AnswerFont"
+            android:text="@string/gamma" />
 
         <CheckBox
             android:id="@+id/checkboxb3"
-            android:text="@string/omega"
-            style="@style/AnswerFont"/>
+            style="@style/AnswerFont"
+            android:text="@string/omega" />
 
         <CheckBox
             android:id="@+id/checkboxb4"
-            android:text="@string/epsilon"
-            style="@style/AnswerFont"/>
+            style="@style/AnswerFont"
+            android:text="@string/epsilon" />
 
         <TextView
             android:id="@+id/textView4"
-            android:text="@string/_4_what_is_the_goddess_of_love_and_beauty"
-            style="@style/QuestionFont" />
+            style="@style/QuestionFont"
+            android:text="@string/_4_what_is_the_goddess_of_love_and_beauty" />
 
         <RadioGroup
             android:id="@+id/radioGroup2"
@@ -120,29 +117,30 @@
 
             <RadioButton
                 android:id="@+id/radiob1"
+                style="@style/AnswerFont"
                 android:onClick="onRadioButtonClickedQ2"
-                android:text="@string/artemis"
-                style="@style/AnswerFont"/>
+                android:text="@string/artemis" />
 
             <RadioButton
                 android:id="@+id/radiob2"
+                style="@style/AnswerFont"
                 android:onClick="onRadioButtonClickedQ2"
-                android:text="@string/hera"
-                style="@style/AnswerFont" />
+                android:text="@string/hera" />
 
             <RadioButton
                 android:id="@+id/radiob3"
+                style="@style/AnswerFont"
                 android:onClick="onRadioButtonClickedQ2"
-                android:text="@string/athena"
-                style="@style/AnswerFont" />
+                android:text="@string/athena" />
 
             <RadioButton
                 android:id="@+id/radiob4"
+                style="@style/AnswerFont"
                 android:onClick="onRadioButtonClickedQ2"
-                android:text="@string/aphrodite"
-                style="@style/AnswerFont" />
+                android:text="@string/aphrodite" />
 
         </RadioGroup>
+
         <TextView
             android:id="@+id/textView5"
             style="@style/QuestionFont"
@@ -169,17 +167,17 @@
             <!--Submit-Reset Buttons. -->
             <Button
                 android:id="@+id/btnDisplay"
+                style="@style/Button"
                 android:layout_width="wrap_content"
                 android:onClick="onSubmit"
-                android:text="@string/submit_answer"
-                style="@style/Button" />
+                android:text="@string/submit_answer" />
 
             <Button
                 android:id="@+id/buttonrReset"
+                style="@style/Button"
                 android:layout_width="match_parent"
                 android:onClick="onClear"
-                android:text="@string/reset"
-                style="@style/Button" />
+                android:text="@string/reset" />
 
         </LinearLayout>
     </LinearLayout>
