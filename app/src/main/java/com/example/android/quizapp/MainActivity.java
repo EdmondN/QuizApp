@@ -3,7 +3,6 @@ package com.example.android.quizapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -91,19 +90,21 @@ public class MainActivity extends AppCompatActivity {
         // If RadioGroup is empty in question 1
         RadioGroup radio1Group = findViewById(R.id.radioGroup1);
         if (radio1Group.getCheckedRadioButtonId() == -1) {
-            score = 0;
+            score += 0;
             Toast.makeText(this, R.string.noanswerQ1, Toast.LENGTH_SHORT).show();
             return;
         }
         // If CheckBox is empty in question 2
         if ((!question2_2) && (!question2_3) && (!question2_1) && (!question2_4)) {
-            score = 0;
+            score += 0;
             Toast.makeText(this, R.string.noanswerQ2, Toast.LENGTH_SHORT).show();
             return;
         }
 
         if ((question2_2) && (question2_3) && (!question2_1) && (!question2_4)) {
             resultQ2 = true;
+        } else {
+            resultQ2 = false;
 
         }
         CheckBox question3__1 = (CheckBox) findViewById(R.id.checkboxb1);
@@ -117,19 +118,21 @@ public class MainActivity extends AppCompatActivity {
 
         // If CheckBox is empty in question 3
         if ((!question3_2) && (!question3_3) && (!question3_1) && (!question3_4)) {
-            score = 0;
+            score += 0;
             Toast.makeText(this, R.string.noanswerQ3, Toast.LENGTH_SHORT).show();
             return;
         }
 
         if ((question3_1) && (question3_3) && (!question3_2) && (!question3_4)) {
             resultQ3 = true;
+        } else {
+            resultQ3 = false;
         }
 
         // If RadioGroup is empty in question 4
         RadioGroup radio2Group = findViewById(R.id.radioGroup2);
         if (radio2Group.getCheckedRadioButtonId() == -1) {
-            score = 0;
+            score += 0;
             Toast.makeText(this, R.string.noanswerQ4, Toast.LENGTH_SHORT).show();
             return;
         }
@@ -139,11 +142,13 @@ public class MainActivity extends AppCompatActivity {
         String question5 = question_5.getText().toString();
         if (question5.equalsIgnoreCase(getString(R.string.dias)) || question5.equalsIgnoreCase(getString(R.string.Dias)) || question5.equalsIgnoreCase(getString(R.string.zeus)) || question5.equalsIgnoreCase(getString(R.string.Zeus))) {
             resultQ5 = true;
+        } else {
+            resultQ5 = false;
 
         }
         // If EditText is empty in question 5
         if (question5.isEmpty()) {
-            score = 0;
+            score += 0;
             Toast.makeText(this, R.string.noanswerQ5, Toast.LENGTH_SHORT).show();
             return;
         }
@@ -154,10 +159,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (question6.equalsIgnoreCase(getString(R.string.Nafplio1)) || question6.equalsIgnoreCase(getString(R.string.nafplio1)) || question6.equalsIgnoreCase(getString(R.string.nauplio)) || question6.equalsIgnoreCase(getString(R.string.Nauplio))) {
             resultQ6 = true;
+        } else {
+            resultQ6 = false;
         }
         // If EditText is empty in question 6
         if (question6.isEmpty()) {
-            score = 0;
+            score += 0;
             Toast.makeText(this, R.string.noanswerQ6, Toast.LENGTH_SHORT).show();
             return;
         }
@@ -199,6 +206,7 @@ public class MainActivity extends AppCompatActivity {
             message += "\n" + getString(R.string.Q6isWrong);
         }
         Toast.makeText(this, getString(R.string.score) + " " + finalScore + "\n" + textToast + "\n" + message, Toast.LENGTH_SHORT).show();
+        score += 0;
     }
 
     //* Clears all selected radio buttons, checkboxes, edittexts to default *//
@@ -233,7 +241,7 @@ public class MainActivity extends AppCompatActivity {
         resultQ4 = false;
         resultQ5 = false;
         resultQ6 = false;
-        score = 0;
+        score += 0;
     }
 
     // Caltulate Score
